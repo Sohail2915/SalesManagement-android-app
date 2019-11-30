@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dialog_header"
+                android:id="@+id/tv_1"
+                android:text="MATERIAL NAME"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/linearLayout2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".8"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="NAME"
+                        android:gravity="center"
+                        android:textStyle="italic" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button">
+                        <Spinner
+                            android:id="@+id/All_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="1dp"
+                            android:popupBackground="@color/White"
+                            android:spinnerMode="dropdown" />
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_detail"
+                        android:text="DETAIL"
+                        android:id="@+id/detail"
+                        android:gravity="center"
+                        android:textStyle="italic" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".8"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/dialog_main"
+                            android:text="USED"
+                            android:gravity="center"
+                            android:textStyle="italic" />
+                        <EditText
+                            android:id="@+id/Production_Material_qun"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textStyle="italic"
+                            android:textColor="@color/White"
+                            android:hint="QUNTITY"
+                            android:textColorHint="@color/White"
+                            android:textSize="@dimen/dialog_main"
+                            android:inputType="numberDecimal" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button">
+
+                            <Spinner
+                                android:id="@+id/Production_Material_spinerML"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="1dp"
+                                android:popupBackground="@color/White"
+                                android:spinnerMode="dropdown" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight=".3"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/dialog_main"
+                            android:text="COST"
+                            android:gravity="center"
+                            android:textStyle="italic" />
+                        <EditText
+                            android:id="@+id/COST"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/White"
+                            android:hint="TOTAL AMOUNT"
+                            android:textStyle="italic"
+                            android:textColorHint="@color/White"
+                            android:textSize="@dimen/dialog_main"
+                            android:layout_marginRight="5dp"
+                            android:inputType="numberDecimal" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight=".3"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/dialog_detail"
+                            android:text="RS"
+                            android:textStyle="italic"
+                            android:gravity="center" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <Button
+                        android:id="@+id/Production_Material_SAVE"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linearLayout2"
+                        android:text="Save"
+                        android:textSize="@dimen/dialog_main"
+                        android:textColor="@color/White"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:textStyle="italic"
+                        android:background="@drawable/button"/>
+                    <Button
+                        android:id="@+id/Production_Material_EXIT"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linearLayout2"
+                        android:text="EXIT"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/dialog_main"
+                        android:textColor="@color/White"
+                        android:textStyle="italic"
+                        android:background="@drawable/button"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

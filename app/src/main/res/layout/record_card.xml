@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/ripple_effect"
+    android:layout_height="70dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".01"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight=".2"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/White"
+                android:tint="@color/White"
+                android:scaleType="center"
+                android:src="@drawable/ic_delete_sweep_black_24dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_colour"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="Sweep" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".002"
+            android:layout_height="match_parent"
+            android:background="@color/White"></View>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:text="DATE"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_colour"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="POWERED BY_FALCON CHAMICAL_KK-APP"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".002"
+            android:layout_height="match_parent"
+            android:background="@color/White"></View>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="match_parent"
+            android:tint="@color/White"
+            android:scaleType="center"
+            android:src="@drawable/ic_navigate_next_black_24dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".01"
+        android:background="@color/White"></View>
+</LinearLayout>

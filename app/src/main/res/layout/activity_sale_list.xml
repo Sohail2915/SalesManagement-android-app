@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kk.kamranqadeer.salemanager.Sale"
+    android:background="@drawable/front_1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:shadowColor="@color/White"
+                            android:text="STOCK QUNTITY"
+                            android:textColor="@color/White"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:textSize="12sp"
+                            android:layout_gravity="top"
+                            android:visibility="visible"/>
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:shadowColor="@color/White"
+                            android:text="Stock base on production..."
+                            android:textColor="@color/text_colour"
+                            android:textStyle="italic"
+                            android:gravity="left"
+                            android:textSize="10sp"
+                            android:layout_gravity="top"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="@color/White"
+                        android:text="STOCK#"
+                        android:textColor="@color/White"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:id="@+id/text_1_2"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="top"
+                        android:background="@drawable/search"
+                        android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Sale_List_RecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/White"
+        android:dividerHeight="4dp"
+        android:scrollbarSize="2dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="center"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/White"
+        android:tint="@color/Black"
+        app:fabSize="auto"
+        app:rippleColor="@color/Black"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:onClick="Add_Sale"
+        tools:ignore="OnClick" />
+</FrameLayout>
+
+</LinearLayout>

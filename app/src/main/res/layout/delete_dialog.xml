@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_page">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:textSize="@dimen/delete"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="45dp"
+            android:gravity="center"
+            android:text="Press ok for delete"
+            android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/linearLayout2"
+            android:text="OK"
+            android:textSize="@dimen/dialog_main"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/Red"
+            android:background="@drawable/button"/>
+        <Button
+            android:id="@+id/no"
+            android:layout_width="140dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/linearLayout2"
+            android:text="NO"
+            android:textSize="@dimen/dialog_main"
+            android:textColor="@color/logocolour"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

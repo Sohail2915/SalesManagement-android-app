@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_effect">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/White"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_colour"
+                        android:textSize="15sp"
+                        android:text="Date"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/Date"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="15sp"
+                        android:text="DATE"
+                        android:textColorHint="@color/ForestGreen"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_colour"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:text="Shop name"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/text_3"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="15sp"
+                        android:text="Name"
+                        android:textColorHint="@color/ForestGreen"
+                        android:layout_centerInParent="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_colour"
+                        android:textSize="15sp"
+                        android:text="Today sale"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="15sp"
+                        android:text="# DOZEN"
+                        android:textColorHint="@color/ForestGreen"
+                        android:layout_centerInParent="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_colour"
+                        android:textSize="15sp"
+                        android:text="Sale amount"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/text_1_1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:textSize="15sp"
+                        android:text="# RS"
+                        android:textColorHint="@color/ForestGreen"
+                        android:layout_centerInParent="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_colour"
+                        android:textSize="15sp"
+                        android:text="Production cost"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:textSize="12sp"
+                        android:text="#COST # RS"
+                        android:textColorHint="@color/ForestGreen"
+                        android:layout_centerInParent="true" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".002"
+                    android:layout_height="match_parent"
+                    android:background="@color/White"></View>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight=".14"
+                        android:layout_height="0dp"
+                        android:scaleType="center"
+                        android:id="@+id/takepic"
+                        android:src="@drawable/ic_camera_black_24dp"
+                        android:tint="@color/White"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_colour"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:text="Check pic" />
+
+                </LinearLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/White"></View>
+</LinearLayout>

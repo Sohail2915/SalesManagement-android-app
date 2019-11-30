@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/page3"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:text="ACCOUNT"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/White"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:text="SALE AMOUNT"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="# RS"
+                android:textColor="@color/White"
+                android:background="@drawable/page3"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:id="@+id/sale_amount"
+                android:layout_margin="15dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:text="PRODUCTION COST"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="# RS"
+                android:textColor="@color/White"
+                android:background="@drawable/page3"
+
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/production_cost"
+                android:visibility="visible"
+                android:layout_margin="15dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:text="PROFIT"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="# RS"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:background="@drawable/page3"
+
+                android:textSize="15sp"
+                android:id="@+id/profit"
+                android:visibility="visible"
+                android:layout_margin="15dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:text="LOSS"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="# RS"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:background="@drawable/page3"
+                android:textSize="15sp"
+                android:id="@+id/loss"
+                android:visibility="visible"
+                android:layout_margin="15dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:textColor="@color/White"
+            android:gravity="center|top"
+            android:textSize="15sp"
+            android:text="POWERED BY_FALCON CHAMICAL_KK-APP"
+            android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_page">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dialog_header"
+                android:text="Detail"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/linearLayout2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="NAME"
+                        android:textStyle="italic"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:id="@+id/name"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="Detail"
+                        android:background="@drawable/page3"
+                        android:gravity="center"
+                        android:textStyle="italic"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="USED"
+                        android:textStyle="italic"
+                        android:gravity="center"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/page3"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/dialog_main"
+                            android:text="Detail"
+                            android:gravity="center"
+                            android:id="@+id/used"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/dialog_main"
+                            android:text="Scale"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/Scale"
+                            android:textStyle="italic"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="LABOUR COST"
+                        android:textStyle="italic"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="Detail"
+                        android:background="@drawable/page3"
+                        android:id="@+id/labourwork"
+                        android:gravity="center"
+                        android:textStyle="italic" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="TOTAL COST"
+                        android:textStyle="italic"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/dialog_main"
+                        android:text="Detail"
+                        android:background="@drawable/page3"
+                        android:id="@+id/totalcost"
+                        android:gravity="center"
+                        android:textStyle="italic" />
+                </LinearLayout>
+                    <Button
+                        android:id="@+id/check_ok"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="OK"
+                        android:textSize="@dimen/dialog_main"
+                        android:layout_gravity="center"
+                        android:textColor="@color/White"
+                        android:textStyle="italic"
+                        android:background="@drawable/button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

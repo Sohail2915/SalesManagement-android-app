@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/front_1"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kk.kamranqadeer.salemanager.PurchasingDetail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/PurcDeRecyclerView"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@color/White"
+                android:dividerHeight="4dp"
+                android:scrollbarSize="2dp"
+                android:layout_height="match_parent"
+                />
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="center"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_input_add"
+                app:backgroundTint="@color/White"
+                android:tint="@color/Black"
+                app:fabSize="auto"
+                app:rippleColor="@color/Black"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:onClick="AddMaterial"
+                tools:ignore="OnClick" />
+        </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:text="ALL MATERIL PURCHASING COST"
+                        android:gravity="center|left"
+                        android:textColor="@color/White"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:text="0 RS"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/page3"
+                        android:textColor="@color/White"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/total_amount"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="How many material you purchas"
+                        android:textColor="@color/White"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/page3"
+                        android:textColor="@color/White"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/item_quntity" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:text="Enter all over extra amount in RS !"
+                        android:textColor="@color/text_colour"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/search"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/White"
+                            android:id="@+id/Ext_Amount"
+                            android:inputType="number"
+                            android:textSize="12dp"
+                            android:hint="Extra amount /carriage/travling"
+                            android:textColorHint="@color/White"
+                            android:textStyle="italic"/>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight=".2"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/logocolour"
+                            android:tint="@color/White"
+                            android:scaleType="center"
+                            android:src="@drawable/puchasing_cost"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:text="Final amount for purchsing material..."
+                            android:textColor="@color/text_colour"
+                            android:textSize="10sp"
+                            android:textStyle="italic"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:text="Final cost"
+                            android:textColor="@color/White"
+                            android:textSize="10sp"
+                            android:textStyle="italic"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:text="Final cost"
+                            android:textColor="@color/White"
+                            android:textSize="15sp"
+                            android:id="@+id/final_amount"
+                            android:textStyle="italic"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/SAVE_amount"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".6"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_below="@+id/linearLayout2"
+                        android:background="@drawable/button"
+                        android:text="SAVE"
+                        android:clickable="true"
+                        android:textColor="@color/Black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

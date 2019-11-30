@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">SALE MANAGER</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <dimen name="dialog_header">30sp</dimen>
+    <dimen name="dialog_main">17sp</dimen>
+    <dimen name="dialog_detail">13sp</dimen>
+    <dimen name="header">30sp</dimen>
+    <dimen name="delete">25sp</dimen>
+    <dimen name="detail">13sp</dimen>
+    <dimen name="main">17sp</dimen>
+    <string-array name="Scale">
+        <item>ml</item>
+        <item>kg</item>
+        <item>gm</item>
+    </string-array>
+    <string-array name="Grades">
+        <item>QUALITY</item>
+        <item>A   :QUALITY</item>
+        <item>B   :QUALITY</item>
+        <item>C   :QUALITY</item>
+        <item>D   :QUALITY</item>
+        <item>E   :QUALITY</item>
+    </string-array>
+    <string-array name="Day">
+        <item>DAY</item>
+        <item>MONDAY</item>
+        <item>TUSEDAY</item>
+        <item>THUSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+    </string-array>
+    <string-array name="Scale_2">
+        <item>Select</item>
+        <item>Liter</item>
+        <item>ml</item>
+        <item>kg</item>
+        <item>gm</item>
+        <item>pice</item>
+        <item>dozen</item>
+    </string-array>
+    <string-array name="Scale_3">
+        <item>Scale</item>
+        <item>Liter</item>
+        <item>kg</item>
+        <item>can</item>
+        <item>pice</item>
+        <item>dozen</item>
+    </string-array>
+    <string-array name="Year">
+        <item>y</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <string-array name="Month">
+        <item>m</item>
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AGU</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>MOV</item>
+        <item>DEC</item>
+    </string-array>
+    <string name="title_activity_record__all__products">Record_All_Products</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_all__record">All_Record</string>
+    <string name="title_activity_record__all__detail">Record_All_Detail</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/front_1"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="HELP"
+        android:gravity="center"
+        android:textSize="@dimen/header"
+        android:textColor="@color/White"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="@drawable/page3"
+        android:layout_margin="5dp"
+        android:text="Follow some instructions for using SALE MANAGER application"
+        android:textSize="@dimen/main"
+        android:textColor="@color/White"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Fist add all materials which you want to use in production ."
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/text_colour"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"
+                android:text="Now you can use all materials which you add in All Materils and use in Production and Purchasing  ."
+                android:textSize="15dp"
+                android:textColor="@color/text_colour"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Production module is distribute in two section one is Toady Production and second is Production Detais  ."
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/text_colour"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"
+                    android:text="In Today Production only you can add today production and get a result ."
+                    android:textSize="15dp"
+                    android:textColor="@color/text_colour"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="In Production Materials you first add all materials whis is use for Product Production ."
+                    android:textSize="15dp"
+                    android:textColor="@color/text_colour"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="In Sale module you enter how many dozen you sale ."
+                android:textSize="15dp"
+                android:textColor="@color/text_colour"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"
+                android:text="Now check out monthly report."
+                android:textSize="15dp"
+                android:textColor="@color/text_colour"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Genrate a monthly report in PDF fome ."
+                    android:textSize="15dp"
+                    android:textColor="@color/text_colour"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Print out PDF file and save it in hard form ."
+                    android:textSize="15dp"
+                    android:textColor="@color/text_colour"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/ripple_effect"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="NAME"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:background="@drawable/page3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="PRODUCTION"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:background="@drawable/page3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/production"
+                android:layout_gravity="center"
+                android:text="#"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/page3"
+
+                android:text="SALE"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:background="@drawable/page3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/sale"
+                android:layout_gravity="center"
+                android:text="#"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="15sp"
+                android:background="@drawable/page3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="LEFT"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:background="@drawable/page3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/left"
+                android:layout_gravity="center"
+                android:text="#"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

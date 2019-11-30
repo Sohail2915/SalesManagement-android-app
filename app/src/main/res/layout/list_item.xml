@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/Production_textm4"
+    android:layout_height="60dp"
+    android:textColor="@color/White"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:background="@drawable/page1"
+    android:text="NAME"
+    android:textColorHint="@color/ForestGreen"
+    android:layout_centerInParent="true">
+
+    </TextView>

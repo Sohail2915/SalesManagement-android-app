@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kk.kamranqadeer.salemanager.Sale"
+    android:background="@drawable/front_1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/slide_Layout"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="25dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:layout_weight=".5">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textColor="@color/text_colour"
+                            android:textSize="15sp"
+                            android:text="All material list /Update/Add material... "/>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:tint="@color/White"
+                            android:id="@+id/Go_to_Materilas"
+                            android:background="@drawable/ripple_effect"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/Production_Today_Recycle1"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/page5"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scrollbars="horizontal"
+                            android:scrollbarThumbVertical="@color/White"
+                            android:dividerHeight="4dp"
+                            android:scrollbarSize="2dp"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Production_Today_Recycle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="vertical"
+                    android:scrollbarThumbVertical="@color/White"
+                    android:dividerHeight="4dp"
+                    android:scrollbarSize="2dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="center"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/White"
+        android:tint="@color/Black"
+        app:fabSize="auto"
+        app:rippleColor="@color/Black"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="Today_Production"
+        tools:ignore="OnClick" />
+    <ImageView
+        android:layout_width="20dp"
+        android:id="@+id/slide"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:background="@drawable/button"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:tint="@color/White" />
+</FrameLayout>

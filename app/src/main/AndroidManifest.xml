@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kk.kamranqadeer.salemanager">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/HiddenTitleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sale" />
+        <activity android:name=".Purchasing" />
+        <activity android:name=".Production" />
+        <activity android:name=".Record" />
+        <activity android:name=".SaleList"/>
+        <activity android:name=".PurchasingDetail" />
+        <activity android:name=".Production_Today" />
+        <activity android:name=".Production_Material" />
+        <activity android:name=".All_Raw_Materials" />
+        <activity
+            android:name=".Record_All_Detail"
+            android:label="@string/title_activity_record__all__detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PDF_WORK.PDF_Templet"
+            android:theme="@style/HiddenTitleTheme" />
+    </application>
+
+</manifest>

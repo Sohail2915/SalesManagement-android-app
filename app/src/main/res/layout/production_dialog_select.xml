@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:src="@drawable/notification"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/White"
+            android:textSize="@dimen/dialog_main"
+            android:gravity="center"
+            android:text="YOU WANT TO ENTER MTERIALS DETAIL"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <Button
+                        android:id="@+id/Yes"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linearLayout2"
+                        android:text="YES"
+                        android:textSize="@dimen/dialog_main"
+                        android:textColor="@color/White"
+                        android:textStyle="italic"
+                        android:background="@drawable/button"/>
+                    <Button
+                        android:id="@+id/Late"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linearLayout2"
+                        android:text="LATE"
+                        android:textSize="@dimen/dialog_main"
+                        android:textColor="@color/White"
+                        android:textStyle="italic"
+                        android:background="@drawable/button"/>
+                </LinearLayout>
+</LinearLayout>

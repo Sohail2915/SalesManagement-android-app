@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kk.kamranqadeer.salemanager.Sale"
+    android:background="@drawable/front_1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/White"
+            android:text="ALL PURCHASING LIST"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:visibility="visible"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/White"
+            android:text="POWERED BY_FALCON CHAMICAL_KK-APP"
+            android:textColor="@color/text_colour"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:gravity="center_horizontal" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/PurchisingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@color/White"
+                android:dividerHeight="4dp"
+                android:scrollbarSize="2dp"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="center"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/White"
+        android:tint="@color/Black"
+        app:fabSize="auto"
+        app:rippleColor="@color/Black"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:onClick="ADDPURCH"
+        tools:ignore="OnClick" />
+</FrameLayout>

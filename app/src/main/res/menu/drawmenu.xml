@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/dash"
+    android:icon="@drawable/ic_dashboard_black_24dp"
+    android:title="DASHBOARED"></item>
+    <item android:id="@+id/data_backup"
+        android:icon="@drawable/ic_backup_black_24dp"
+        android:title="BACK UP"></item>
+    <item android:id="@+id/all_bill"
+        android:icon="@drawable/ic_picture_in_picture_black_24dp"
+        android:title="BILL PIC"></item>
+    <item android:id="@+id/all_file"
+        android:icon="@drawable/pdf"
+        android:title="ALL PDF"></item>
+    <item android:id="@+id/help"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:title="About"></item>
+</menu>

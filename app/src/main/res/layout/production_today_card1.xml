@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/ripple_effect">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_colour"
+            android:textSize="10sp"
+            android:text="material :"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:textSize="10sp"
+            android:text="#"
+            android:textColorHint="@color/ForestGreen"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Production_Material_N"
+        android:gravity="center"
+        android:background="@drawable/page5"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_colour"
+        android:textSize="15sp"
+        android:text="Name"
+        android:textStyle="italic" />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.kk.kamranqadeer.salemanager.Record_All_Detail">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="match_parent"
+                    android:text="SELECT LABOUR"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:visibility="visible"
+                    android:gravity="center" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/page2"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:popupBackground="@drawable/page2"
+                        android:layout_height="30dp"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scrollbars="vertical"
+                        android:scrollbarThumbVertical="@color/White"
+                        android:dividerHeight="4dp"
+                        android:scrollbarSize="2dp"
+                        android:id="@+id/recycleview">
+                    </android.support.v7.widget.RecyclerView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:text="TOTAL WORK"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:visibility="visible"
+                                android:gravity="center" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="DOZEN"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:visibility="visible"
+                                android:id="@+id/total_work"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:text="TOTAL AMOUNT"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:visibility="visible"
+                                android:gravity="center" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="# RS"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:visibility="visible"
+                                android:id="@+id/total_amount"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:text="PAID AMOUNT"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:id="@+id/text_check"
+                                android:textSize="15sp"
+                                android:visibility="visible"
+                                android:gravity="center" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="15sp"
+                                android:textColor="@color/White"
+                                android:hint="#RS"
+                                android:textColorHint="@color/White"
+                                android:textStyle="bold"
+                                android:background="@drawable/page5"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:id="@+id/pade_amount"/>
+
+                            <Button
+                                android:id="@+id/pay"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="OK"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/Black"
+                                android:textStyle="bold"
+                                android:background="@drawable/button"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:text="LEFT AMOUNT"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:visibility="visible"
+                                android:gravity="center" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="# RS"
+                                android:textColor="@color/White"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:id="@+id/left_amount"
+                                android:visibility="visible"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+</RelativeLayout>
